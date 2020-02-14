@@ -1,9 +1,12 @@
 body{
 	background-color: #fff;
-	
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
+	font-weight: 100;
+
 }
 .header{
+	font-size: 15px;
 	display: flex;
 	padding-left: 170px;
 	padding-right: 170px;
@@ -19,8 +22,8 @@ body{
 	height: 60px;
 }
 nav{
-	width: 600px;
-	margin: 0 auto;
+	position: absolute;
+	right: 170px;
 }
 ul{
 	margin: 0;
@@ -52,8 +55,8 @@ ul li a{
 	background-color: grey;
 	
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 200px;
+	margin-right: 200px;
 	height: 200px;
 	width: 970px;
 }
@@ -85,7 +88,15 @@ ul li a{
 .welcome{
 	display: flex;
 	height: 500px;
-    
+}
+.welcome .about h4{
+	font-size: 40px;
+	font-weight: 900;
+}
+.welcome .about p{
+	line-height: 1.5;
+	font-size: 12px;
+	font-weight: 300;
 }
 .sign-up{
 	margin-left: 330px;
@@ -93,6 +104,168 @@ ul li a{
 	margin-top: -250px;
 	width: 430px;
 	height: 530px;
-	background-color: white;
+	background-color: grey;
 	right: 0;
+}
+/*.main-slider{
+	  font-family:Arial;
+  width:200px;
+  display:block;
+  margin:0 auto;
+}
+.slide-item{
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}*/
+.slider {
+      position: relative;
+      overflow: hidden;
+      margin-right: 170px;
+      margin-left: 170px;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+    .slider__item img{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+    }
+     .slider__item h3{
+     	text-align: center;
+     }
+     .slider__item p{
+     	padding-right: 45px;
+     	padding-left: 45px;
+     }
+.acordeon{
+	z-index: -1;
+	background-color: grey;
+	margin-right: 170px;
+	margin-left: 170px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	height: 375px;
+
+}
+.reward{
+	color: white;
+	text-align: right;
+	z-index: -1;
+	height: 700px;
+	background-color: #4b4d4f;
+	width: 100%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 82%, 0 100%);
+  display: block;
+  position:relative;
+}
+.reward_circle{
+	background-color: #ff8f49;
+	border-radius: 800px;
+	height: 330px;
+	width: 330px;
+	z-index: 10;
+	margin-bottom: -270px;
+	margin-left: 170px;
+}
+.reward_text{
+	font-size: 25px;
+	margin-left: 630px;
+	right: 0;
+	position: relative;
+	padding-top: 60px;
+	width: 670px;
+}
+.reward_text h3{
+	font-size: 40px;
+	font-size: 900;
+}
+.reward_button{
+	background-color: #90d23d;
+	border-radius: 10px;
+	height: 60px;
+	width: 200px;
+	color: white;
+	font-size: 15px;
+	border-color: #90d23d;
+
+}
+
+
+.footer{
+	background-color: #90d23d;
+	height: 220px;
+	width: 100%;
 }
