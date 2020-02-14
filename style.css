@@ -1,0 +1,98 @@
+body{
+	background-color: #fff;
+	
+	margin: 0;
+}
+.header{
+	display: flex;
+	padding-left: 170px;
+	padding-right: 170px;
+	padding-top: 50px;
+}
+.con{
+	background-color: #4a454b;
+
+}
+.logo{
+	
+	width: 230px;
+	height: 60px;
+}
+nav{
+	width: 600px;
+	margin: 0 auto;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 60px;
+}
+ul li{
+	float: left;
+}
+ul li a{
+	color: #fff;
+	display: block;
+	height: 60px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 60px;
+}
+.opening{
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  display: block;
+  position:relative;
+	height: 660px;
+		padding-top: 120px;
+}
+.timing{
+	background-color: grey;
+	
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	width: 970px;
+}
+.hero{
+	margin-top: 230px;
+	padding-left: 100px;
+}
+.icon1{
+
+	margin-bottom: -80px;
+}
+.icon2{
+
+	margin-bottom: -60px;
+}
+.icon3{
+
+	margin-bottom: -40px;
+}
+.icon4{
+
+	margin-bottom: -20px;
+}
+
+.about{
+	margin-left: 100px;
+	width: 530px;
+}
+.welcome{
+	display: flex;
+	height: 500px;
+    
+}
+.sign-up{
+	margin-left: 330px;
+	position: relative;
+	margin-top: -250px;
+	width: 430px;
+	height: 530px;
+	background-color: white;
+	right: 0;
+}
