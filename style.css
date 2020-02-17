@@ -6,16 +6,14 @@ body{
 
 }
 .header{
+	z-index: 1;
 	font-size: 15px;
 	display: flex;
 	padding-left: 170px;
 	padding-right: 170px;
 	padding-top: 50px;
 }
-.con{
-	background-color: #4a454b;
 
-}
 .logo{
 	
 	width: 230px;
@@ -44,42 +42,55 @@ ul li a{
 	line-height: 60px;
 }
 .opening{
+	background-color: #4a454b;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
   display: block;
   position:relative;
-	height: 660px;
-		padding-top: 120px;
+	height: 560px;
+	margin-top: -110px;
+		padding-top: 220px;
+		z-index: -1;
 }
 .timing{
 	background-color: grey;
 	
 	display: flex;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 200px;
 	width: 970px;
 }
 .hero{
-	margin-top: 230px;
+
+	margin-top: 150px;
 	padding-left: 100px;
 }
 .icon1{
-
-	margin-bottom: -80px;
+position: absolute;
+z-index: 5;
+	margin-top: 40px;
 }
-.icon2{
-
-	margin-bottom: -60px;
+.icon2{z-index: 4;
+	position: absolute;
+margin-left: 140px;;
+	margin-top: 30px;
 }
-.icon3{
-
-	margin-bottom: -40px;
+.icon3{z-index: 3;
+	margin-left: 280px;
+position: absolute;
+	margin-top: 20px;
 }
-.icon4{
-
-	margin-bottom: -20px;
+.icon4{z-index: 2;
+	margin-left: 420px;
+position: absolute;
+	margin-top: 10px;
 }
+.icon5{z-index: 1;
+	margin-left: 560px;
+	position: absolute;
+}
+
 
 .about{
 	margin-left: 100px;
@@ -89,7 +100,7 @@ ul li a{
 	display: flex;
 	height: 500px;
 }
-.welcome .about h4{
+h4{
 	font-size: 40px;
 	font-weight: 900;
 }
@@ -104,25 +115,48 @@ ul li a{
 	margin-top: -250px;
 	width: 430px;
 	height: 530px;
-	background-color: grey;
+	background-color: white;
+	border: 1px solid black;
 	right: 0;
 }
-/*.main-slider{
-	  font-family:Arial;
-  width:200px;
-  display:block;
-  margin:0 auto;
+input{
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	height: 55px;
+	width: 355px;
+	padding-left: 15px;
+	font-size: 15px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
 }
-.slide-item{
-    background: #fff;
-    color: #3498db;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}*/
+.sign-up p{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.submit{
+	margin-top: 40px;
+	width: 372px;
+	height: 61px;
+	background-color: #90d23d;
+	color: white;
+	text-align: center;
+	font-size: 17px;
+	
+}
+.sign-up h4{
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+}
+.sign-up-text{
+	text-align: center;
+	padding-top: 10px;
+	font-size: 15px;
+
+}
 .slider {
       position: relative;
       overflow: hidden;
@@ -232,10 +266,7 @@ margin-right: auto;
   position:relative;
 }
 .reward_circle{
-	background-color: #ff8f49;
-	border-radius: 800px;
-	height: 330px;
-	width: 330px;
+	
 	z-index: 10;
 	margin-bottom: -270px;
 	margin-left: 170px;
@@ -262,10 +293,98 @@ margin-right: auto;
 	border-color: #90d23d;
 
 }
+.speakers{
+	height: 500px;
+}
+.sponsor{
+	color: white;
+	text-align: right;
+	height: 700px;
+	background-color: #4b4d4f;
+	width: 100%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 82%, 0 100%);
+  display: block;
+  position:relative;
+}
+.sponsor_text h3{
+	font-size: 50px;
+}
+.sponsor_text{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	padding-top: 80px;
+	width: 670px;
+}
+.sponsor_img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sponsor1{
 
+display: flex;
+}
+.sponsor2{
+
+	display: flex;
+}
+.sponsor3{
+	
+	display: flex;
+}
+.sponsor_button{
+background-color: #90d23d;
+	border-radius: 10px;
+	height: 60px;
+	width: 200px;
+	color: white;
+	font-size: 15px;
+	border-color: #90d23d;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactUs{
+	background-image: url("images/Map.png");
+	height: 660px;
+
+
+}
+.contact_form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	background-color: white;
+	width: 970px;
+	height: 530px;
+}
 
 .footer{
 	background-color: #90d23d;
 	height: 220px;
 	width: 100%;
+	display: flex;
+}
+.social{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 60px;
+}
+.footer-text{
+	text-align: center;
+}
+#myBtn{
+	cursor: pointer;
+	position: relative;
+	display: flex;
 }
