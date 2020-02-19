@@ -66,14 +66,14 @@ $(document).on('click', '#myBtn', function() {
     return false;
 });
 
-// $(document).on('click', $('.anchor'), function(e){
-// 	e.preventDefault();
-// 	var hrefLink = $(this).attr('href');
-// 	var scroll = $(hrefLink).offset().top;
-// 	$('body, html').animate({
-// 		scrollTop: 0
-// 	}, 'slow');
-// });
+$(document).on('click', '.anchor', function(e) {
+    e.preventDefault();
+    var hrefLink = $(this).attr('href');
+    var scroll = $(hrefLink).offset().top;
+    $('body, html').animate({
+        scrollTop: 0
+    }, 'slow');
+});
 
 $(document).ready(function() {
     $('.slider-wrapper').slick({
