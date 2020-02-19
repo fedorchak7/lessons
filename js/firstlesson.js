@@ -22,7 +22,7 @@ $("#test").on('submit', function(event) {
 });
 
 
-$(document).on('click', '#myBtn', function() {
+$(document).on('click', $('#myBtn'), function() {
     $('body, html').animate({
         scrollTop: 0
     }, 1500);
