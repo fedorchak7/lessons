@@ -1,6 +1,6 @@
 'use strict';
 // scroll top button
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
         $('#myBtn').fadeIn();
     } else {
@@ -16,13 +16,13 @@ $(window).scroll(function() {
 // })
 
 
-$("#test").on('submit', function(event) {
-    alert("Handler for .submit() called.");
+$("#test").on('submit', function (event) {
     event.preventDefault();
+    alert("Handler for .submit() called.");
 });
 
 
-$(document).on('click', '#myBtn', function() {
+$(document).on('click', '#myBtn', function () {
     $('body, html').animate({
         scrollTop: 0
     }, 1500);
@@ -38,7 +38,7 @@ $(document).on('click', '#myBtn', function() {
 // 	}, 'slow');
 // });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.slider-wrapper').slick({
         infinite: true,
         slidesToShow: 3,
