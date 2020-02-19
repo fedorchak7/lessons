@@ -1,22 +1,9 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-weight: 100;
     overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
 }
 
 .input-box {}
@@ -28,17 +15,11 @@ p {
 
 .header {
     font-size: 15px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     padding: 50px 170px 0;
 }
 
 .menu-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     position: fixed;
 }
@@ -57,9 +38,6 @@ p {
     padding: 0;
     list-style: none;
     height: 60px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -74,7 +52,7 @@ p {
 }
 
 .opening {
-    background-image: url('../images/back.png');
+    background-image: url('/images/back.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,9 +69,6 @@ p {
 
 .timing {
     background-color: grey;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -146,9 +121,6 @@ p {
 }
 
 .welcome {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     height: 500px;
 }
@@ -176,10 +148,7 @@ h4 {
 }
 
 .sign-up input,
-.sign-up button {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+button {
     display: flex;
     margin: 20px auto;
     height: 50px;
@@ -316,9 +285,7 @@ h4 {
     margin-right: auto;
     margin-left: auto;
     width: 970px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
@@ -368,46 +335,40 @@ h4 {
     width: 670px;
 }
 
-.sponsor-item {
-    display: flex;
-    align-items: center;
-    margin-right: 85px;
-}
-
-.sponsor-item:last-child {
-    margin-right: 0;
-}
-
 .sponsor-img {
     padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
     position: relative;
     padding-bottom: 65px;
     width: 600px;
+}
+
+.sponsor1 {
+    display: flex;
+}
+
+.sponsor2 {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+}
+
+.sponsor3 {
+    padding-top: 30px;
 }
 
 .sponsor-button {
     background-color: #90d23d;
     border-radius: 18px;
     height: 60px;
-    min-width: 200px;
-    padding: 0 20px;
-    /* padding-left: 52px; */
+    width: 200px;
+    padding-left: 52px;
     color: white;
     font-size: 18px;
     border: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Roboto', sans-serif;
@@ -424,7 +385,7 @@ h4 {
 }
 
 .contactUs {
-    background-image: url("../images/Map.png");
+    background-image: url("images/Map.png");
     height: 660px;
     padding-top: 70px;
 }
@@ -434,8 +395,6 @@ h4 {
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -454,9 +413,6 @@ h4 {
 .map-img {
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -472,9 +428,6 @@ h4 {
 }
 
 .view-map-btn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     margin-right: auto;
     margin-left: auto;
