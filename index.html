@@ -3,18 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Envato</title>
-	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> 
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="header">
-		      <img class="logo" alt="a" src="images/Logo.png">
-		      <nav class="menu-wrapper"><ul>
-		      	<li><a href="#welcome">Event Details</a></li>
-		      	<li><a href="#">Speakers</a></li>
-		      	<li><a href="#">Sponsors</a></li>
-		      	<li><a href="#">Past Events</a></li>
-		      	<li><a href="#">Contact</a></li>
+		      <img class="logo" alt="logo" src="images/Logo.png">
+		      <nav class="menu-wrapper"><ul class="menu-items">
+		      	<li><a class="anchor" href="#welcome">Event Details</a></li>
+		      	<li><a class="anchor" href="#">Speakers</a></li>
+		      	<li><a class="anchor" href="#">Sponsors</a></li>
+		      	<li><a class="anchor" href="#">Past Events</a></li>
+		      	<li><a class="anchor" href="#contacts">Contact</a></li>
 		      	</ul>
 		     </nav>
      </header>
@@ -23,126 +25,120 @@
         		
         	</div>
         	<div class="hero">
-        		<img alt="a" class="icon1" src="images/Icon1.png">
-        		<img alt="a" class="icon2" src="images/Icon2.png">
-        		<img alt="a" class="icon3" src="images/Icon3.png">
-        		<img alt="a" class="icon4" src="images/Icon4.png">
-        		<img alt="a" class="icon5" src="images/Icon5.png">
+        		<img alt="icon1" class="icon1" src="images/Icon1.png">
+        		<img alt="icon2" class="icon2" src="images/Icon2.png">
+        		<img alt="icon3" class="icon3" src="images/Icon3.png">
+        		<img alt="icon4" class="icon4" src="images/Icon4.png">
+        		<img alt="icon5" class="icon5" src="images/Icon5.png">
         	</div>
         </section>
         <section id="welcome" class="welcome">
         	<article class="about">
         		<h4>Welcome!</h4>
         		<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magnam tempora error saepe perspiciatis, corporis dolorum perferendis ipsam aperiam molestias? Optio dolorum nostrum facere unde saepe omnis. Molestias, molestiae, doloremque?
-        			<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti, beatae eum totam odit expedita modi laudantium praesentium, quasi vero nihil doloribus consequatur! Aspernatur quae numquam nulla, quidem iusto reiciendis.</P>
+        			</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti, beatae eum totam odit expedita modi laudantium praesentium, quasi vero nihil doloribus consequatur! Aspernatur quae numquam nulla, quidem iusto reiciendis.</p>
         	</article>
         	<div id="sign" class="sign-up">
         		<form name="test" method="post" action="#"><h4>Sign up for our event</h4>
-  <p><br>
+  <p>
    <input placeholder="Enter your name" type="text" size="50">
   </p>
-  <p><br>
+  <p>
    <input placeholder="Enter your email" type="text" size="50">
   </p>
-  <p><br>
+  <p>
    <input placeholder="Phone number" type="text" size="50">
   </p>
-  <p><br>
+  <p>
    <input placeholder="Envato Username" type="text" size="50">
   </p>
-  <input class="submit" type="submit" value="Let me in!">
-  <p class="sign-up-text">Hurry up, Limited seats availble <br>*we will never spam your email</p>
+   <button type="submit">Let Me In!</button>
+  <p class="sign-up-text">Hurry up, Limited seats availble </p><p class="sign-up-text">*we will never spam your email</p>
         	</form></div>
         </section>
-        <div class="slider">
+   <section class="slider">
  
-  <div class="slider__wrapper">
-    <div class="slider__item"><img alt="a" src="images/VectorSmartObject3.png"><h3>Community</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit amet sequi dolor neque consequatur cumque quam dolore consequuntur recusandae possimus quod voluptatibus nisi voluptate harum, asperiores, vero, vel, libero fugiat!</p></div>
-    <div class="slider__item"><img alt="a" src="images/VectorSmartObject2.png"><h3>Talk Shop</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempora repudiandae possimus temporibus eius aspernatur expedita alias, optio ab voluptates. Ut quibusdam dolorum ipsa error unde ducimus rem voluptatibus ea!</p></div>
-    <div class="slider__item"><img alt="a" src="images/VectorSmartObject.png"><h3>War Stories</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsa quibusdam magni laborum similique necessitatibus laboriosam! Laboriosam sed, deleniti, voluptates adipisci magni expedita fugit autem totam vitae, ut soluta ullam?</p></div>
-    <div class="slider__item"><img alt="a" src="images/VectorSmartObject3.png"><h3>Community</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid molestiae nisi, quidem veritatis deleniti eum, aut expedita neque similique reiciendis beatae, tempora culpa est eaque, pariatur mollitia! Sapiente, officiis, enim.</p></div>
-    <div class="slider__item"><img alt="a" src="images/VectorSmartObject2.png"><h3>Talk Shop</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rem suscipit et est amet nulla harum esse atque, maiores itaque ipsa quo mollitia nihil at corporis voluptatum assumenda numquam obcaecati.</p></div>
+  <div class="slider-wrapper">
+    <div class="slider-item"><img alt="Image slide 1" src="images/VectorSmartObject3.png"><h3>Community</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit amet sequi dolor neque consequatur cumque quam dolore consequuntur recusandae possimus quod voluptatibus nisi voluptate harum, asperiores, vero, vel, libero fugiat!</p></div>
+    <div class="slider-item"><img alt="Image slide 2" src="images/VectorSmartObject2.png"><h3>Talk Shop</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempora repudiandae possimus temporibus eius aspernatur expedita alias, optio ab voluptates. Ut quibusdam dolorum ipsa error unde ducimus rem voluptatibus ea!</p></div>
+    <div class="slider-item"><img alt="Image slide 3" src="images/VectorSmartObject.png"><h3>War Stories</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ipsa quibusdam magni laborum similique necessitatibus laboriosam! Laboriosam sed, deleniti, voluptates adipisci magni expedita fugit autem totam vitae, ut soluta ullam?</p></div>
+    <div class="slider-item"><img alt="Image slide 4" src="images/VectorSmartObject3.png"><h3>Community</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid molestiae nisi, quidem veritatis deleniti eum, aut expedita neque similique reiciendis beatae, tempora culpa est eaque, pariatur mollitia! Sapiente, officiis, enim.</p></div>
+    <div class="slider-item"><img alt="Image slide 5" src="images/VectorSmartObject2.png"><h3>Talk Shop</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rem suscipit et est amet nulla harum esse atque, maiores itaque ipsa quo mollitia nihil at corporis voluptatum assumenda numquam obcaecati.</p></div>
   </div>
- <a class="slider__control slider__control_left" href="#" role="button"></a>
-    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-</div>
+</section>
 
 <section class="acordeon"></section>
-	<div class="reward_circle"><img alt="a" src="images/EliteBadge.png"></div>
-<div class="reward">
-<div class="reward_text"><h3>We reward the Elites!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est, placeat soluta beatae rem debitis vitae reprehenderit facere repudiandae deserunt veritatis quod excepturi obcaecati quos ratione corporis saepe, amet eaque aliquid, impedit expedita minus. Totam similique, necessitatibus harum mollitia iure deserunt molestiae optio ullam laudantium, asperiores consequatur repellat maiores. Voluptatum poror veniam ut rerum, incidunt, repellat consequuntur dolorem officia velit, deleniti repudiandae mollitia.</p>
-<button class="reward_button">Bring on the swag!</button></div>
-</div>
+	<div class="reward-circle"><img alt="Elite Badge" src="images/EliteBadge.png"></div>
+<section class="reward">
+<div class="reward-text"><h3>We reward the Elites!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est, placeat soluta beatae rem debitis vitae reprehenderit facere repudiandae deserunt veritatis quod excepturi obcaecati quos ratione corporis saepe, amet eaque aliquid, impedit expedita minus. Totam similique, necessitatibus harum mollitia iure deserunt molestiae optio ullam laudantium, asperiores consequatur repellat maiores. Voluptatum poror veniam ut rerum, incidunt, repellat consequuntur dolorem officia velit, deleniti repudiandae mollitia.</p>
+<button class="reward-button">Bring on the swag!</button></div>
+</section>
 <section class="speakers"><h4>Speakers</h4>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Minima non molestias magni cumque alias nam impedit, doloribus repudiandae, sed nihil.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, natus.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Minima non molestias magni cumque alias nam impedit, doloribus repudiandae, sed nihil.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, natus.</p>
   
-   <div class="speakers_table">
-   	<div class="speaker_item"><div class="speaker_item2"></div></div>
-   	<div class="speaker_item"></div>
-   	<div class="speaker_item"></div>
+   <div class="speakers-table">
+   	<div class="speaker-item"><div class="speaker-item2"></div></div>
+   	<div class="speaker-item"></div>
+   	<div class="speaker-item"></div>
 
-   	<div class="speaker_item"></div>
-   	<div class="speaker_item_center"><img alt="a" src="images/speakers.png"></div>
-   	<div class="speaker_item"></div>
+   	<div class="speaker-item"></div>
+   	<div class="speaker-item-center"><img alt="a" src="images/speakers.png"></div>
+   	<div class="speaker-item"></div>
 
-   	<div class="speaker_item"></div>
-   	<div class="speaker_item"></div>
-   	<div class="speaker_item"></div>
+   	<div class="speaker-item"></div>
+   	<div class="speaker-item"></div>
+   	<div class="speaker-item"></div>
 
 
    </div>
-   
-
-
-
-
 </section>
-<div class="sponsor"><div class="sponsor_text"><h3>Sponsor Our Event!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor vero amet cum soluta libero incidunt. Tempore aliquid fuga, consectetur!</p></div>
-<div class="sponsor_img">
-	<div class="sponsor1"><img alt="a" src="images/Mountains.png"></div>
-	<div class="sponsor2"><img alt="a" src="images/S.png"></div>
-	<div class="sponsor3"><img alt="a" src="images/evanto.png"></div>
+<section class="sponsor"><div class="sponsor-text"><h3>Sponsor Our Event!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor vero amet cum soluta libero incidunt. Tempore aliquid fuga, consectetur!</p></div>
+<div class="sponsor-img">
+	<div class="sponsor1"><img alt="Mountains" src="images/Mountains.png"></div>
+	<div class="sponsor2"><img alt="Logo sponsor company" src="images/S.png"></div>
+	<div class="sponsor3"><img alt="Logo envato" src="images/evanto.png"></div>
 </div>
-	<button class="sponsor_button">Sponsor Us</button></div>
+	<button class="sponsor-button">Sponsor Us</button></section>
+<section class="gallery">
+ 	<div class="gallery-text"><h4>Past Events</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quae?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, excepturi cupiditate quod.</p></div>
 
-   <section class="contactUs">
-   	<div class="contact_form">
+ 	
+ </section>
+   <section id="contacts" class="contactUs">
+   	<div class="contact-form">
    		<div class="cnt">
-   		<img class="map_img" alt="a" src="images/map_img.png">
-   		<div class="cnt_text"><p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.<br> Reiciendis, expedita!</p></div>
-   		<button class="view_map_btn">View Map</button>
+   		<img class="map-img" alt="Map background" src="images/map_img.png">
+   		<div class="cnt-text"><p>Lorem ipsum dolor sit amet,</p><p> consectetur adipisicing elit.</p><p> Reiciendis, expedita!</p></div>
+   		<button class="view-map-btn">View Map</button>
    	</div>
-   	<div class="contact_msg">
-   		<input class="msg_mail" placeholder="Enter your mail" type="text" size="50">
-   		<textarea class="msg_text" placeholder="Type your message" name="text"></textarea>
-   		<button class="send_msg_btn">Send Message</button>
+   	<div class="contact-msg">
+   		<form name="cnt-msg" method="post" action="#">
+   		<input class="msg-mail" placeholder="Enter your mail" type="text" size="50">
+   		<textarea class="msg-text" placeholder="Type your message" name="text"></textarea>
+   		<button class="send-msg-btn">Send Message</button></form>
    	</div>
 </div>
-
-
 
    </section>
-
-
-
-
-
-
-
 <footer class="footer">
-	<div onclick="topFunction()" id="myBtn" title="Go to top"><img alt="a" src="images/slideUp.png"></div>
+	<div id="myBtn" title="Go to top"><img alt="Button slide up" src="images/slideUp.png"></div>
 <div class="social">
-	<img alt="a" class="links" src="images/facebook.png">
-	<img alt="a" class="links" src="images/linkedin.png">
-	<img alt="a" class="links" src="images/googlep.png">
-	<img alt="a" class="links" src="images/facebook.png">
-	<img alt="a" class="links last_links" src="images/facebook.png">
+	<img alt="facebook" class="links" src="images/facebook.png">
+	<img alt="linkedin" class="links" src="images/linkedin.png">
+	<img alt="google" class="links" src="images/googlep.png">
+	<img alt="facebook" class="links" src="images/facebook.png">
+	<img alt="facebook" class="links last-links" src="images/facebook.png">
 </div>
-<div><p class="footer-text">Hope we see you at the event!<br> All Rights Reserved. Envato Bangladesh!</p></div>
+<div><p class="footer-text">Hope we see you at the event!</p><p class="footer-text"> All Rights Reserved. Envato Bangladesh!</p></div>
 
 
 
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="firstlesson.js"></script>
 
 
