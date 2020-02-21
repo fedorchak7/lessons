@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/Logo.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header container">
+        <img class="logo" alt="logo" src="images/Logo.png">
         <nav class="menu-wrapper">
-            <img class="logo" alt="logo" src="images/Logo.png">
             <ul class="menu-items">
                 <li><a class="anchor" href="#welcome">Event Details</a></li>
                 <li><a class="anchor" href="#">Speakers</a></li>
@@ -25,47 +26,47 @@
             </ul>
         </nav>
     </header>
-    <section id="opening" class="opening con">
+    <section id="opening" class="opening  container">
         <div class="timing">
-
+            <p id="demo"></p>
         </div>
         <div class="hero">
-            <img alt="icon1" class="icon1" src="images/Icon1.png">
-            <img alt="icon2" class="icon2" src="images/Icon2.png">
-            <img alt="icon3" class="icon3" src="images/Icon3.png">
-            <img alt="icon4" class="icon4" src="images/Icon4.png">
-            <img alt="icon5" class="icon5" src="images/Icon5.png">
+            <img alt="icon1" data-aos="fade-right" class="icon1" src="images/Icon1.png">
+            <img alt="icon2" data-aos="fade-right" class="icon2" src="images/Icon2.png">
+            <img alt="icon3" data-aos="fade-right" class="icon3" src="images/Icon3.png">
+            <img alt="icon4" data-aos="fade-right" class="icon4" src="images/Icon4.png">
+            <img alt="icon5" data-aos="fade-right" class="icon5" src="images/Icon5.png">
         </div>
     </section>
-    <section id="welcome" class="welcome">
+    <section id="welcome" class="welcome  container">
         <article class="about">
             <h4>Welcome!</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magnam tempora error saepe perspiciatis, corporis dolorum perferendis ipsam aperiam molestias? Optio dolorum nostrum facere unde saepe omnis. Molestias, molestiae, doloremque?
             </p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti, beatae eum totam odit expedita modi laudantium praesentium, quasi vero nihil doloribus consequatur! Aspernatur quae numquam nulla, quidem iusto reiciendis.</p>
         </article>
-        <div id="sign" class="sign-up">
-            <form id="test" name="test" method="post">
-                <h4>Sign up for our event</h4>
-                <div class="input-box input-required">
-                    <input placeholder="Enter your name" type="text" size="50">
-                </div>
-                <div class="input-box input-email">
-                    <input placeholder="Enter your email" type="text" size="50">
-                </div>
-                <div class="input-box input-phone">
-                    <input placeholder="Phone number" type="text" size="50">
-                </div>
-                <div class="input-box input-required">
-                    <input placeholder="Envato Username" type="text" size="50">
-                </div>
-                <button type="submit">Let Me In!</button>
-                <p class="sign-up-text">Hurry up, Limited seats availble </p>
-                <p class="sign-up-text">*we will never spam your email</p>
-            </form>
-        </div>
+
+        <form id="test" class="sign-up" name="test" method="post">
+            <h4>Sign up for our event</h4>
+            <div class="input-box input-required">
+                <input placeholder="Enter your name" type="text" size="50">
+            </div>
+            <div class="input-box input-email">
+                <input placeholder="Enter your email" type="text" size="50">
+            </div>
+            <div class="input-box input-phone">
+                <input placeholder="Phone number" type="text" size="50">
+            </div>
+            <div class="input-box input-required">
+                <input placeholder="Envato Username" type="text" size="50">
+            </div>
+            <button type="submit">Let Me In!</button>
+            <p class="sign-up-text">Hurry up, Limited seats availble </p>
+            <p class="sign-up-text">*we will never spam your email</p>
+        </form>
+
     </section>
-    <section class="slider">
+    <section class="slider  container">
 
         <div class="slider-wrapper">
             <div class="slider-item"><img alt="Image slide 1" src="images/VectorSmartObject3.png">
@@ -92,46 +93,53 @@
         </div>
     </section>
 
-    <section class="acordeon">
+    <section class="acordeon  container">
         <div class="ac-main-heading">
             <div class="text-1">Time</div>
             <div class="text-2">Stuff that will happen</div>
         </div>
-        <div>
-            <div class="ac-heading">
-                <p class="text-1">
-                    Header</p>
-                <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="ac-content non-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</div>
+
+        <div class="ac-heading">
+            <p class="text-1">
+                Header</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div>
-            <div class="ac-heading heading2">
-                <p class="text-1">
-                    Header</p>
-                <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="ac-content non-active ">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</div>
+        <div class="ac-content non-active">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</p>
         </div>
-        <div>
-            <div class="ac-heading">
-                <p class="text-1">
-                    Header</p>
-                <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="ac-content non-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</div>
+
+
+        <div class="ac-heading">
+            <p class="text-1">
+                Header</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div>
-            <div class="ac-heading">
-                <p class="text-1">
-                    Header</p>
-                <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="ac-content non-active">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</div>
+        <div class="ac-content non-active ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</p>
         </div>
+
+
+        <div class="ac-heading">
+            <p class="text-1">Header</p>
+            <p class="text-2"> Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="ac-content non-active">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</p>
+        </div>
+
+        <div class="ac-heading">
+            <p class="text-1">
+                Header</p>
+            <p class="text-2">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="ac-content non-active">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rem.</p>
+        </div>
+
     </section>
-    <div class="reward-circle"><img alt="Elite Badge" src="images/EliteBadge.png"></div>
+
     <section class="reward">
+        <div class="reward-circle"><img alt="Elite Badge" src="images/EliteBadge.png"></div>
         <div class="reward-text">
             <h3>We reward the Elites!</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est, placeat soluta beatae rem debitis vitae reprehenderit facere repudiandae deserunt veritatis quod excepturi obcaecati quos ratione corporis saepe, amet eaque aliquid, impedit
@@ -140,103 +148,152 @@
             <button class="reward-button">Bring on the swag!</button>
         </div>
     </section>
-    <section class="speakers">
+    <section class="speakers  container">
         <h4>Speakers</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Minima non molestias magni cumque alias nam impedit, doloribus repudiandae, sed nihil.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, natus.</p>
+        <p class="zagolovok">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p class="zagolovok">Minima non molestias magni cumque alias nam impedit, doloribus repudiandae, sed nihil.</p>
+        <p class="zagolovok">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, natus.</p>
 
         <div class="speakers-table">
-            <div class="speaker-item">
-                <div class="speaker-item2"></div>
+            <div class="speaker-item" style="background-image: url('images/speaker1.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
             </div>
-            <div class="speaker-item"></div>
-            <div class="speaker-item"></div>
+            <div class="speaker-item" style="background-image: url('images/speaker2.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
+            <div class="speaker-item" style="background-image: url('images/speaker3.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
 
-            <div class="speaker-item"></div>
-            <div class="speaker-item-center"><img alt="a" src="images/speakers.png"></div>
-            <div class="speaker-item"></div>
+            <div class="speaker-item" style="background-image: url('images/speaker4.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
+            <div class="speaker-item-center "><img alt="a " src="images/speakers.png "></div>
+            <div class="speaker-item" style="background-image: url('images/speaker5.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
 
-            <div class="speaker-item"></div>
-            <div class="speaker-item"></div>
-            <div class="speaker-item"></div>
+            <div class="speaker-item" style="background-image: url('images/speaker6.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
+            <div class="speaker-item" style="background-image: url('images/speaker7.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
+            <div class="speaker-item" style="background-image: url('images/speaker8.png')">
+                <div class="info">
+                    <h5>Shahrier Shuro</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aperiam.</p>
+                    <div class="iconcs">lorem</div>
+                </div>
+            </div>
 
 
         </div>
     </section>
-    <section class="sponsor">
-        <div class="sponsor-text">
+    <section class="sponsor ">
+        <div class="sponsor-text ">
             <h3>Sponsor Our Event!</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor vero amet cum soluta libero incidunt. Tempore aliquid fuga, consectetur!</p>
         </div>
-        <div class="sponsor-img">
-            <div class="sponsor-item"><img alt="Mountains" src="images/Mountains.png"></div>
-            <div class="sponsor-item"><img alt="Logo sponsor company" src="images/S.png"></div>
-            <div class="sponsor-item"><img alt="Logo envato" src="images/evanto.png"></div>
+        <div class="sponsor-img ">
+            <div class="sponsor-item "><img alt="Mountains " src="images/Mountains.png "></div>
+            <div class="sponsor-item "><img alt="Logo sponsor company " src="images/S.png "></div>
+            <div class="sponsor-item "><img alt="Logo envato " src="images/evanto.png "></div>
         </div>
-        <button class="sponsor-button">Sponsor Us</button>
+        <button class="sponsor-button ">Sponsor Us</button>
     </section>
-    <section class="gallery">
-        <div class="gallery-text">
+    <section class="gallery container ">
+        <div class="gallery-text ">
             <h4>Past Events</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quae?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, excepturi cupiditate quod.</p>
-
-            <a data-fancybox="images" href="images/dddd.jfif" data-caption="fox1"><img src="images/dddd.jfif" /></a>
-            <a data-fancybox="images" href="images/dssss.jfif" data-caption="fox2"><img src="images/dssss.jfif" /></a>
-            <a data-fancybox="images" href="images/завантаження.jfif" data-caption="fox3"><img src="images/завантаження.jfif" /></a>
-            <a data-fancybox="images" href="images/photo-1503614472-8c93d56e92ce.jfif" data-caption="fox1"><img src="images/photo-1503614472-8c93d56e92ce.jfif" /></a>
-            <!--<a data-fancybox="images" href="images/завантаження.jfif" data-caption="fox2"><img src="images/завантаження.jfif" /></a>
-                <a data-fancybox="images" href="images/dddd.jfif" data-caption="fox3"><img src="images/dddd.jfif" /></a>
-                <a data-fancybox="images" href="images/dssss.jfif" data-caption="fox1"><img src="images/dssss.jfif" /></a>
-                <a data-fancybox="images" href="images/завантаження.jfif" data-caption="fox2"><img src="images/завантаження.jfif" /></a>
-                <a data-fancybox="images" href="images/photo-1503614472-8c93d56e92ce.jfif" data-caption="fox3"><img src="images/photo-1503614472-8c93d56e92ce.jfif" /></a>
-                -->
         </div>
+        <a data-fancybox="images " href="images/dddd.jfif " data-caption="fox1 "><img src="images/gallery1.jpg" /></a>
+        <a data-fancybox="images " href="images/dssss.jfif " data-caption="fox2 "><img src="images/gallery2.jpg " /></a>
+        <a data-fancybox="images " href="images/завантаження.jfif " data-caption="fox3 "><img src="images/gallery3.jpg " /></a>
+        <a data-fancybox="images " href="images/photo-1503614472-8c93d56e92ce.jfif " data-caption="fox1 "><img src="images/gallery4.jfif " /></a>
+        <!--<a data-fancybox="images " href="images/завантаження.jfif " data-caption="fox2 "><img src="images/завантаження.jfif " /></a>
+                <a data-fancybox="images " href="images/dddd.jfif " data-caption="fox3 "><img src="images/dddd.jfif " /></a>
+                <a data-fancybox="images " href="images/dssss.jfif " data-caption="fox1 "><img src="images/dssss.jfif " /></a>
+                <a data-fancybox="images " href="images/завантаження.jfif " data-caption="fox2 "><img src="images/завантаження.jfif " /></a>
+                <a data-fancybox="images " href="images/photo-1503614472-8c93d56e92ce.jfif " data-caption="fox3 "><img src="images/photo-1503614472-8c93d56e92ce.jfif " /></a>
+                -->
+
 
 
     </section>
-    <section id="contacts" class="contactUs">
-        <div class="contact-form">
-            <div class="cnt">
-                <img class="map-img" alt="Map background" src="images/map_img.png">
-                <div class="cnt-text">
+    <section id="contacts " class="contactUs ">
+        <div class="contact-form ">
+            <div class="cnt ">
+                <img class="map-img " alt="Map background " src="images/map_img.png ">
+                <div class="cnt-text ">
                     <p>Lorem ipsum dolor sit amet,</p>
                     <p> consectetur adipisicing elit.</p>
                     <p> Reiciendis, expedita!</p>
                 </div>
-                <button class="view-map-btn">View Map</button>
+                <button class="view-map-btn ">View Map</button>
             </div>
-            <div class="contact-msg">
-                <form name="cnt-msg" method="post" action="#">
-                    <input class="msg-mail" placeholder="Enter your mail" type="text" size="50">
-                    <textarea class="msg-text" placeholder="Type your message" name="text"></textarea>
-                    <button class="send-msg-btn">Send Message</button></form>
+            <div class="contact-msg ">
+                <form name="cnt-msg " method="post " action="# ">
+                    <div class="input-required input-email ">
+                        <input class="msg-mail input-box " placeholder="Enter your mail " type="text "></div>
+                    <div class="input-msg ">
+                        <textarea class="msg-text input-box " placeholder="Type your message " name="text "></textarea></div>
+                    <button class="send-msg-btn ">Send Message</button></form>
             </div>
         </div>
 
     </section>
-    <footer class="footer">
-        <div id="myBtn" title="Go to top"><img alt="Button slide up" src="images/slideUp.png"></div>
-        <div class="social">
-            <img alt="facebook" class="links" src="images/facebook.png">
-            <img alt="linkedin" class="links" src="images/linkedin.png">
-            <img alt="google" class="links" src="images/googlep.png">
-            <img alt="facebook" class="links" src="images/facebook.png">
-            <img alt="facebook" class="links last-links" src="images/facebook.png">
+    <footer class="footer ">
+        <div id="myBtn " title="Go to top "><img alt="Button slide up " src="images/slideUp.png "></div>
+        <div class="social ">
+            <img alt="facebook " class="links " src="images/facebook.png ">
+            <img alt="linkedin " class="links " src="images/linkedin.png ">
+            <img alt="google " class="links " src="images/googlep.png ">
+            <img alt="facebook " class="links " src="images/facebook.png ">
+            <img alt="facebook " class="links last-links " src="images/facebook.png ">
         </div>
         <div>
-            <p class="footer-text">Hope we see you at the event!</p>
-            <p class="footer-text"> All Rights Reserved. Envato Bangladesh!</p>
+            <p class="footer-text ">Hope we see you at the event!</p>
+            <p class="footer-text "> All Rights Reserved. Envato Bangladesh!</p>
         </div>
 
 
 
     </footer>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/jquery.fancybox.min.js "></script>
+    <script src="js/slick.js "></script>
+    <script src="js/aos.js "></script>
+    <script src="js/main.js "></script>
 
 
 </body>
