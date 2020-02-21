@@ -37,31 +37,69 @@ p {
     color: red;
 }
 
-.header-scroll {
-    transform: translateY(-50px);
-    transition: 1s;
-    font-size: 10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    padding-top: 0;
-    width: 60%;
-    justify-content: space-between;
-    background-color: grey;
-    z-index: 1;
-    opacity: 0.9;
+.burger {
+    position: relative;
+    width: 30px;
+    display: none;
+    height: 30px;
+}
+
+.burger span {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+}
+
+.burger.active {}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 15px;
+}
+
+.burger.active span:nth-child(2) {
+    display: none;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 13px;
+}
+
+.header.header-scroll {
+    transition: all .4s linear 0s;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px 10%;
 }
 
 .header {
+    z-index: 999;
     font-size: 15px;
+    width: 100%;
+    padding: 50px 10% 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    transition: all .4s linear 0s;
     position: fixed;
-    padding-top: 50px;
     top: 0;
     width: 100%;
     justify-content: space-between;
@@ -112,69 +150,76 @@ p {
     background-size: cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative;
-    height: 90vh;
+    height: 100vh;
+    min-height: 500px;
+    /* max-height: 1200px; */
     width: 100%;
-    margin-top: -110px;
-    padding-top: 320px;
-    z-index: -1;
+    /* margin-top: -110px; */
+    /* padding-top: 320px; */
+    /* z-index: -1; */
+}
+
+.opening .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 9;
 }
 
 .timing {
-    background-color: grey;
+    /* background-color: grey; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     height: 200px;
     max-width: 970px;
-    min-width: 700px;
+    /* min-width: 700px; */
     color: white;
     font-size: 100px;
     align-items: center;
     justify-content: center;
     border: 1px solid green;
     border-radius: 20px;
+    position: relative;
+    z-index: 9;
 }
 
 .hero {
-    margin-top: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* margin-top: 250px; */
 }
 
-.icon1 {
-    position: absolute;
-    z-index: 5;
-    margin-top: 40px;
+.hero img {
+    position: relative;
+    left: -30px;
 }
 
-.icon2 {
-    z-index: 4;
-    position: absolute;
-    margin-left: 140px;
-    margin-top: 30px;
+.hero img:nth-child(1) {
+    left: 0;
 }
 
-.icon3 {
-    z-index: 3;
-    margin-left: 280px;
-    position: absolute;
-    margin-top: 20px;
+.hero img:nth-child(2) {
+    left: -60px;
 }
 
-.icon4 {
-    z-index: 2;
-    margin-left: 420px;
-    position: absolute;
-    margin-top: 10px;
+.hero img:nth-child(3) {
+    left: -90px;
 }
 
-.icon5 {
-    z-index: 1;
-    margin-left: 560px;
-    position: absolute;
+.hero img:nth-child(4) {
+    left: -120px;
+}
+
+.hero img:nth-child(5) {
+    left: -150px;
 }
 
 .about {
@@ -219,6 +264,7 @@ h4 {
     background-color: white;
     border: 1px solid black;
     right: 0;
+    z-index: 0;
 }
 
 .sign-up input,
@@ -278,9 +324,9 @@ h4 {
 }
 
 .slider {
-    max-width: 1200px;
-    min-width: 600px;
-    margin: 0 auto;
+    /* max-width: 1200px;
+    min-width: 600px; */
+    /* margin: 0 auto; */
 }
 
 .slider-item img {
@@ -825,8 +871,19 @@ h4 {
 }
 
 @media only screen and (max-width: 1024px) {
+    .burger {
+        display: block;
+    }
+
     body {
         background-color: red;
+    }
+
+    .reward::before,
+    .reward::after,
+    .sponsor::before,
+    .sponsor::after {
+        display: none;
     }
 }
 

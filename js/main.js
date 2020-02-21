@@ -2,7 +2,7 @@
 //initialization AOS
 AOS.init();
 // scroll top button
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
 
         $('#header').addClass('header-scroll');
@@ -18,7 +18,7 @@ $(window).scroll(function() {
 var countDownDate = new Date("Feb 27, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(function () {
 
     // Get today's date and time
     var now = new Date().getTime();
@@ -63,7 +63,7 @@ function addPrefFixToPhone() {
 }
 $(document).on('keyup focus', '.input-phone input', addPrefFixToPhone);
 //validate
-$("form").on('submit', function(event) {
+$("form").on('submit', function (event) {
     event.preventDefault();
     var error = false;
 
@@ -79,7 +79,7 @@ $("form").on('submit', function(event) {
     $('div.input-box').removeClass('error-box');
 
     if (inputRequired.length > 0) {
-        inputRequired.each(function() {
+        inputRequired.each(function () {
             if ($(this).find('input').val().trim() === '') {
                 $(this).closest('.input-box').addClass('error-box');
                 error = true;
@@ -119,7 +119,7 @@ $("form").on('submit', function(event) {
 
 
 
-$(document).on('click', '.ac-heading', function() {
+$(document).on('click', '.ac-heading', function () {
     if ($(this).next().hasClass('non-active') === true) {
         $(this).next().removeClass('non-active').slideDown();
     } else {
@@ -128,14 +128,14 @@ $(document).on('click', '.ac-heading', function() {
     return false;
 });
 
-$(document).on('click', '#myBtn', function() {
+$(document).on('click', '#myBtn', function () {
     $('body, html').animate({
         scrollTop: 0
     }, 1500);
     return false;
 });
 
-$(document).on('click', '.anchor', function(e) {
+$(document).on('click', '.anchor', function (e) {
     e.preventDefault();
     var hrefLink = $(this).attr('href');
     var scroll = $(hrefLink).offset().top;
@@ -144,33 +144,28 @@ $(document).on('click', '.anchor', function(e) {
     }, 'slow');
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.slider-wrapper').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         responsive: [{
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
                 }
             }
         ]
