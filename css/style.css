@@ -1,11 +1,18 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-weight: 100;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1,
@@ -20,7 +27,9 @@ p {
 }
 
 .container {
-    padding: 0 170px;
+    padding: 0 15px;
+    width: 1200px;
+    max-width: 100%;
 }
 
 .error-box {
@@ -54,7 +63,7 @@ p {
     position: fixed;
     padding-top: 50px;
     top: 0;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -105,9 +114,10 @@ p {
     clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
     display: block;
     position: relative;
-    height: 550px;
+    height: 90vh;
+    width: 100%;
     margin-top: -110px;
-    padding-top: 220px;
+    padding-top: 320px;
     z-index: -1;
 }
 
@@ -120,7 +130,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     height: 200px;
-    width: 970px;
+    max-width: 970px;
+    min-width: 700px;
     color: white;
     font-size: 100px;
     align-items: center;
@@ -130,7 +141,7 @@ p {
 }
 
 .hero {
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 .icon1 {
@@ -167,7 +178,7 @@ p {
 }
 
 .about {
-    padding: 50px 0 0;
+    padding: 50px 20px 0 0;
     width: 530px;
 }
 
@@ -267,7 +278,8 @@ h4 {
 }
 
 .slider {
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 600px;
     margin: 0 auto;
 }
 
@@ -810,4 +822,34 @@ h4 {
     bottom: 50px;
     right: 50px;
     display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: gold;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    body {
+        background-color: violet;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        background-color: fuchsia;
+    }
 }
